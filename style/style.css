@@ -1,0 +1,112 @@
+.logo {
+  display: block;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #333;
+
+  background: linear-gradient(to right, #5d26c1, #a17fe0, #59c173);
+}
+.container {
+  max-width: 950px;
+  height: 80vh;
+  margin: auto;
+  background: #000;
+  width: 100%;
+  position: relative;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.chats {
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+.chats::-webkit-scrollbar {
+  width: 15px;
+  height: 5px;
+}
+.message {
+  text-align: center;
+  color: #fff;
+  background: #5d26c1;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.5rem;
+  width: auto;
+  max-width: 50%;
+  margin: 0.5rem;
+}
+.left {
+  z-index: 1;
+  text-align: left;
+  border-radius: 10px 10px 10px 0;
+  float: left;
+  clear: both;
+}
+.right {
+  z-index: 1;
+  text-align: right;
+  border-radius: 10px 10px 0 10px;
+  float: right;
+  clear: both;
+}
+
+/* send input container */
+.send {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sendContainer {
+  display: flex;
+  width: 95%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.send input {
+  width: 80%;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  padding: 0 1rem;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.send input:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.send button {
+  width: 60px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background: #5d26c1;
+  color: #fff;
+  font-size: 1rem;
+  margin: 0;
+  margin-left: 1rem;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.send button:hover {
+  background: #a17fe0;
+}

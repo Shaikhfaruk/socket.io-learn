@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Chat App</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="./assets/logo.jpg" class="logo" alt="logo" />
+    </nav>
+
+    <div class="container">
+      <div class="chats">
+        <div class="message left">left</div>
+        <div class="message right">right</div>
+      </div>
+
+      <div class="send">
+        <form action="#" id="sendContainer">
+          <input
+            type="text"
+            placeholder="Type a message"
+            name="messageInput"
+            id="messageInput"
+          />
+          <button>Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- script for socket.io -->
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <!-- Script here -->
+    <script src="./script/client.js"></script>
+  </body>
+</html>
